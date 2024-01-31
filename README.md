@@ -1,6 +1,6 @@
                                                                         **COURSE 7 : R Programming**
                                                                 ---------------------------------------------
-**Programming languages and environment covered in this course**
+# Programming languages and environment covered in this course
 * R packages
 * R functions, variables, data types, pipes, and vectors
 * R data frames
@@ -8,7 +8,7 @@
 * R visualization tools
 * R Markdown for documentation, creating structure, and emphasis
 
-**Skill sets learnt  in this course:**
+# Skill sets learnt  in this course:
 
 Coding in R
 * Writing functions in R
@@ -17,7 +17,7 @@ Coding in R
 * Generating data visualizations in R
 * Reporting on data analysis to stakeholders
 
-**R Sandbox Activity**
+# R Sandbox Activity
 STEP 1: USING 'R PACKAGES'
 To install the `tidyverse` package:
 -> install.packages("tidyverse")
@@ -41,7 +41,7 @@ To get list of column names from your dataset:
 STEP 3: CLEANING DATA
 To rename the columns:
 -> rename(diamonds, carat_new = carat)
-# old name of the column was carat, which is changed to carat_new
+(old name of the column was carat, which is changed to carat_new)
 
 To generate a wide range of summary statistics for your data:
 -> summarize(diamonds, mean_carat = mean(carat))
