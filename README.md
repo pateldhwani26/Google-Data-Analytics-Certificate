@@ -57,6 +57,7 @@ To generate a wide range of summary statistics for your data:
 * summarize(diamonds, mean_carat = mean(carat))
 
 STEP 4: CREATE VISUALIZATION
+
 `R` empowers to present the same data in so many different ways, which can help to create new insights or highlight important data findings.
 
 To build a visualization with `ggplot2` you layer plot elements together with a `+` symbol.
