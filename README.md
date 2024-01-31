@@ -45,9 +45,11 @@ To get list of column names from your dataset:
 * colnames(diamonds)
 
 STEP 3: CLEANING DATA
+
 To rename the columns:
 
 * rename(diamonds, carat_new = carat)
+
 (old name of the column was carat, which is changed to carat_new)
 
 To generate a wide range of summary statistics for your data:
