@@ -27,6 +27,7 @@ Load it:
 * library(tidyverse)
 
 STEP 2: VIEWING DATA
+
 Dataset named 'diamonds' is already loaded from the package, lets work on it:
 
 To preview the data:
