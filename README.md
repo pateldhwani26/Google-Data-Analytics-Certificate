@@ -24,13 +24,13 @@ To install the `tidyverse` package:
 * install.packages("tidyverse")
 
 Load it:
-library(tidyverse)
+* library(tidyverse)
 
 STEP 2: VIEWING DATA
 Dataset named 'diamonds' is already loaded from the package, lets work on it:
 To preview the data:
 
-*head(diamonds)
+* head(diamonds)
 
 To summarise or preview the data:
 
@@ -41,7 +41,7 @@ To summarise or preview the data:
 
 To get list of column names from your dataset:
 
-*colnames(diamonds)
+* colnames(diamonds)
 
 STEP 3: CLEANING DATA
 To rename the columns:
