@@ -1,5 +1,5 @@
 # COURSE 7 : R Programming
-# ---------------------------------------------
+
 # Programming languages and environment covered in this course
 * R packages
 * R functions, variables, data types, pipes, and vectors
@@ -28,6 +28,7 @@ Load it:
 
 STEP 2: VIEWING DATA
 Dataset named 'diamonds' is already loaded from the package, lets work on it:
+
 To preview the data:
 
 * head(diamonds)
