@@ -41,7 +41,7 @@ To summarise or preview the data:
 
 * glimpse(diamonds)
 
-To get list of column names from your dataset:
+To get list of column names from the dataset:
 
 * colnames(diamonds)
 
@@ -53,7 +53,7 @@ To rename the columns:
 
 (old name of the column was carat, which is changed to carat_new)
 
-To generate a wide range of summary statistics for your data:
+To generate a wide range of summary statistics for the data:
 
 * summarize(diamonds, mean_carat = mean(carat))
 
