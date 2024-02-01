@@ -17,6 +17,17 @@ Coding in R
 * Generating data visualizations in R
 * Reporting on data analysis to stakeholders
 
+# Basic Programming Concepts
+To check installed packages
+
+* installed.packages()
+
+List of packages can be seen on the bottom right pane. 
+
+To load the class and list of other uninstalled packages:
+
+* library(class)
+
 # R Sandbox Activity
 STEP 1: USING 'R PACKAGES'
 To install the `tidyverse` package:
