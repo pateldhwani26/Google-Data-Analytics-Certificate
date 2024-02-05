@@ -108,7 +108,7 @@ In programming, describes code that performs a particular function and is contai
 
 * Call up data (and then)
 * Group the data (and then)
-* Summatize the grouped data using a mean function
+* Summarize the grouped data using a mean function
 
 # Working with a ToothGrowth dataset:
 Note: Make sure to code in Script pane so we can save the data
