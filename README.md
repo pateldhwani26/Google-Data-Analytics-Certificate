@@ -84,3 +84,32 @@ To create a different plot for each type of cut:
 
 * ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) + geom_point() + facet_wrap(~cut)
 
+# 8 core tidyverse packages
+* ggplot2: used for data visualizations
+* tidyr (R): packaged used for data cleaning to make tidy data
+* readr (R): used for importing data
+* dplyr (R): offers a consistent set of functions that helps to complete some common data manupulation tasks
+* tibble: works for dataframes
+* purr: works with functions and vectors helping code make more expressive
+* stringr: makes it easier to work with strings
+* forcats: helps to solve common problems with vectors
+
+# Factors (R)
+
+Store categorical data in R where the data values are limited and usually based on a finite group like country or a year.
+
+# Pipe (R)
+
+A tool in R expressing a sequence of multiple operations, represented with "%>%".
+
+Nested: 
+
+In pregramming, describes code that performs a particular function and is contained within code that performs a borader function
+
+* Call up data (and then)
+* Group the data (and then)
+* Summatize the grouped data using a mean function
+
+
+  
+
