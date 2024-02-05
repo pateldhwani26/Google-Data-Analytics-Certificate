@@ -104,7 +104,7 @@ A tool in R expressing a sequence of multiple operations, represented with "%>%"
 
 Nested: 
 
-In pregramming, describes code that performs a particular function and is contained within code that performs a borader function
+In programming, describes code that performs a particular function and is contained within code that performs a borader function
 
 * Call up data (and then)
 * Group the data (and then)
