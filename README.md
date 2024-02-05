@@ -113,7 +113,10 @@ In programming, describes code that performs a particular function and is contai
 # Working with a ToothGrowth dataset:
 Note: Make sure to code in Script pane so we can save the data
 
+
 Load the dataset:
+
+
  * data("ToothGrowth")
  * View(ToothGrowth)
  * install.packages("dplyr")
