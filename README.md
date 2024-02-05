@@ -110,6 +110,13 @@ In pregramming, describes code that performs a particular function and is contai
 * Group the data (and then)
 * Summatize the grouped data using a mean function
 
+# Working with a ToothGrowth dataset:
+Note: Make sure to code in Script pane so we can save the data
+Load the dataset:
+ * data("ToothGrowth")
+ * View(ToothGrowth)
+ * install.packages("dplyr")
+
 
   
 
