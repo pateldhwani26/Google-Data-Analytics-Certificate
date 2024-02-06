@@ -133,5 +133,38 @@ This function comes as a part of 'dplyr' package:
 Assign a name to the new dataset and apply the filter function:
 
 * filtered_tg <- filter(ToothGrowth,dose==0.5)
-  
 
+Filter the data, and show only the data where the dose of Vitamin C is exactly '0.5'
+* View(filtered_tg)
+  
+Sort the data with arrange function:
+
+* arrange(filtered_tg,len)
+
+# Nested Function
+A function that is completely contained within another function.
+
+arrange(filter(ToothGrowth,dose==0.5),len)
+
+# Insert a Pipe
+filtered_toothgrowth <- ToothGrowth %>% 
+  filter(dose==0.5) %>%
+  arrange(len)
+
+Pipes help programming more efficient and less cluttered, hence fewer chances of mistakes and better readability.
+
+# Group By Function
+Lets find a result with together with both the vitamins and summarise it.
+
+* filtered_toothgrowth <- ToothGrowth %>% 
+  filter(dose==0.5) %>%
+  group_by(supp) %>%
+  summarize(mean_len = mean(len,na.rm = T), .groups = "drop")
+
+# Lets get the average length of tooth when both the doses are '0.5'
+* filtered_toothgrowth
+
+Note:
+1.) Add the pipe operator at the end of each line of the piped operation except the last one
+2.) Chack your code after you've programmed your pipe
+3.) All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error
