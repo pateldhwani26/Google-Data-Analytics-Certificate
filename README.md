@@ -194,11 +194,11 @@ Remember:
 
 In tidyverse, tibbles are like streamlined data frames.
 
-* Never change the data types of the inputs.
-* They are easy to use and time saving.
-* Never change the names of the variables.
-* Never create row names.
-* Make printing easier.
+* They never change the data types of the inputs.
+* They are easy to use and time savers.
+* They never change the names of the variables.
+* They never create row names.
+* They make printing easier.
 
 # Tidy Data (R)
 
