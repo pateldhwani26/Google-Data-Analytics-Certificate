@@ -148,21 +148,27 @@ arrange(filter(ToothGrowth,dose==0.5),len)
 
 # Insert a Pipe
 filtered_toothgrowth <- ToothGrowth %>% 
+
  
   filter(dose==0.5) %>%
+  
  
   arrange(len)
+  
 
 Pipes help programming more efficient and less cluttered, hence fewer chances of mistakes and better readability.
 
 # Group By Function
 Lets find a result with together with both the vitamins and summarise it.
 
-* filtered_toothgrowth <- ToothGrowth %>% 
+* filtered_toothgrowth <- ToothGrowth %>%
+* 
 
    filter(dose==0.5) %>%
+  
 
    group_by(supp) %>%
+  
 
   summarize(mean_len = mean(len,na.rm = T), .groups = "drop")
 
@@ -170,6 +176,6 @@ Lets find a result with together with both the vitamins and summarise it.
 * filtered_toothgrowth
 
 Note:
-* 1.) Add the pipe operator at the end of each line of the piped operation except the last one
-* 2.) Chack your code after you've programmed your pipe
-* 3.) All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error
+* Add the pipe operator at the end of each line of the piped operation except the last one
+* Check your code after you've programmed your pipe
+* All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error
