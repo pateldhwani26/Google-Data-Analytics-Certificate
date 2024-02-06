@@ -159,10 +159,10 @@ filtered_toothgrowth <- ToothGrowth %>%
 Pipes help programming more efficient and less cluttered, hence fewer chances of mistakes and better readability.
 
 # Group By Function
-Lets find a result with together with both the vitamins and summarise it.
+Lets find a result together with both the vitamins and summarise it.
 
 * filtered_toothgrowth <- ToothGrowth %>%
-* 
+ 
 
    filter(dose==0.5) %>%
   
@@ -179,3 +179,35 @@ Note:
 * Add the pipe operator at the end of each line of the piped operation except the last one
 * Check your code after you've programmed your pipe
 * All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error
+
+# R data frames
+
+A data frame is a collection of columns
+
+
+Remember:
+* Columns should be named
+* Data stored can be many different types like numeric, factor or character
+* Each column should contain same number of data items
+
+# Tibbles
+
+In tidyverse, they are like streamlined data frames
+
+* Never change the data types of the inputs
+* They are easy to use and time saving
+* Never change the names of the variables
+* Never create row names
+* Make printing easier
+
+# Tidy Data (R)
+
+A way of standardizing the organization of data within R.
+
+Tidy Data standards:
+
+* Variables are organized into columns
+* Observations are organized into rows
+* Each value must have its own cell
+
+# Import Basics in R:
