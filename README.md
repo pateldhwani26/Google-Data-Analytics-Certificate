@@ -104,14 +104,14 @@ A tool in R expressing a sequence of multiple operations, represented with "%>%"
 
 Nested: 
 
-In programming, describes code that performs a particular function and is contained within code that performs a borader function
+In programming, describes code that performs a particular function and is contained within code that performs a borader function.
 
 * Call up data (and then)
 * Group the data (and then)
 * Summarize the grouped data using a mean function
 
 # Working with a ToothGrowth dataset:
-Note: Make sure to code in Script pane so we can save the data
+Note: Make sure to code in Script pane so we can save the data.
 
 
 Load the dataset:
@@ -176,29 +176,29 @@ Lets find a result together with both the vitamins and summarise it.
 * filtered_toothgrowth
 
 Note:
-* Add the pipe operator at the end of each line of the piped operation except the last one
-* Check your code after you've programmed your pipe
-* All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error
+* Add the pipe operator at the end of each line of the piped operation except the last one.
+* Check your code after you've programmed your pipe.
+* All the lines of the pipes are automatically indented, if the line doesnt get indented itself, probably its not been added to the pipe, which might create error.
 
 # R data frames
 
-A data frame is a collection of columns
+A data frame is a collection of columns.
 
 
 Remember:
-* Columns should be named
-* Data stored can be many different types like numeric, factor or character
-* Each column should contain same number of data items
+* Columns should be named.
+* Data stored can be many different types like numeric, factor or character.
+* Each column should contain same number of data items.
 
 # Tibbles
 
-In tidyverse, they are like streamlined data frames
+In tidyverse, tibbles are like streamlined data frames.
 
-* Never change the data types of the inputs
-* They are easy to use and time saving
-* Never change the names of the variables
-* Never create row names
-* Make printing easier
+* Never change the data types of the inputs.
+* They are easy to use and time saving.
+* Never change the names of the variables.
+* Never create row names.
+* Make printing easier.
 
 # Tidy Data (R)
 
@@ -206,8 +206,8 @@ A way of standardizing the organization of data within R.
 
 Tidy Data standards:
 
-* Variables are organized into columns
-* Observations are organized into rows
-* Each value must have its own cell
+* Variables are organized into columns.
+* Observations are organized into rows.
+* Each value must have its own cell.
 
 # Import Basics in R:
