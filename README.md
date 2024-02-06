@@ -116,11 +116,22 @@ Note: Make sure to code in Script pane so we can save the data
 
 Load the dataset:
 
-
  * data("ToothGrowth")
+
+View:
+
  * View(ToothGrowth)
+
+Install the package:
+
  * install.packages("dplyr")
 
+This function comes as a part of 'dplyr' package:
 
+* library(dplyr)
+
+Assign a name to the new dataset and apply the filter function:
+
+* filtered_tg <- filter(ToothGrowth,dose==0.5)
   
 
