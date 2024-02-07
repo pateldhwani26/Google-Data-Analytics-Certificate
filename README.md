@@ -200,6 +200,37 @@ In tidyverse, tibbles are like streamlined data frames.
 * They never create row names.
 * They make printing easier.
 
+# Working with data frames
+
+Let's work with pre-installed Diamonds dataset
+
+* install.packages("tidyverse")
+* library(ggplot2)
+
+Load the dataset:
+
+* data("diamonds")
+
+Add the dataframe to our data viewer:
+
+* View(diamonds)
+
+head() to get the first 6 rows, to get the quick preview of the dataset:
+
+* head(diamonds)
+
+To see the structure of the dataset use:
+
+* str()
+* colnames()
+
+To make changes to our dataframe:
+( mutate() is part of dyplyr package, which is tidyverse, so make sure to load it)
+
+
+Input mutate and tell R to add column (carat_2) to the diamonds dataframe and multiple column carat with 100
+* mutate()
+
 # Tidy Data (R)
 
 A way of standardizing the organization of data within R.
@@ -210,4 +241,35 @@ Tidy Data standards:
 * Observations are organized into rows.
 * Each value must have its own cell.
 
-# Import Basics in R:
+# Importing .csv file
+
+STEP 1: LOAD THE PACKAGE
+
+* install.packages("tidyverse")
+* library(tidyverse)
+  
+STEP 2: IMPORT THE DATA
+
+Use the read_csv() function to import data from a .csv in the project folder called "hotel_bookings.csv" and save it as a data frame called `bookings_df`:
+
+* bookings_df <- read_csv("hotel_bookings.csv")
+  
+STEP 3: INSPECT AND CLEAN DATA
+
+Preview the data:
+
+* head(bookings_df)
+
+To check the column names:
+
+* colnames(bookings_df)
+
+To create new variables in your data frame, you can use the `mutate()` function.
+
+* mutate(new_df, total = `adr` / adults)
+
+STEP 4: IMPORT OWN DATA
+
+Using the RStudio Cloud interface, import and save the file in the same folder as this R Markdown document.
+
+* own_df <- read_csv("<filename.csv>")
