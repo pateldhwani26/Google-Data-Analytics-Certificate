@@ -273,3 +273,97 @@ STEP 4: IMPORT OWN DATA
 Using the RStudio Cloud interface, import and save the file in the same folder as this R Markdown document.
 
 * own_df <- read_csv("<filename.csv>")
+
+# Simplyfy data cleaning tsaks using here, skimr, and janitor packages using 'palmerpenguins' dataset:
+
+'here' package makes referencing file easier.
+* install.packages("here")
+* library("here")
+  
+'Skimr' package makes summarizing easy and lets data skim through quickly.
+
+* install.packages("skimr")
+* library("skimr")
+
+'janitor' package has functions for cleaning data.
+
+* install.packages("janitor")
+* library("janitor")
+
+We will need to some some features of 'dplyr' package, hence load it too.
+
+* install.packages("dplyr")
+* library("dplyr")
+
+To get the summaries of our dataframe we will use the following functions: 
+
+skim_without_charts() will give us a comprehensive summary about our dataset.
+
+* skim_without_charts(penguins)
+
+glimpse() will provide us a really quick idea about the dataset.
+
+* glimpse(penguins)
+
+head() will provide with quick preview of the data and first few rows of the dataset.
+
+* head(penguins)
+
+select() will allow us to pull the subset of variables from a large dataset. Its useful to specify certain columns, or excludes columns we dont need. 
+i.e we only want the species column, lets input penguins use pipes to indicate another command and our select().
+
+* select(species)
+
+If we want everything , but not species column then:
+
+* penguins %>%
+      select(-species)
+
+To edit the column names:
+
+* penguins %>%
+      rename(island_new=island)
+
+# Organize data using arrange(), group_by(), filter()
+
+Like earlier, we need all the packages loaded to use the dataset.
+* install.packages("tidyverse")
+* library(tidyverse)
+
+* install.packages("dplyr")
+* library("dplyr")
+
+* install.packages("palmerpenguins")
+* library("palmerpenguins")
+
+To choose which variable to sort by:
+i.e Sorting penguin data by bill length
+(by default the result is in ascending order)
+* penguins %>% arrange(bill_length_mm)
+
+To arrange it in desc order:
+* penguins %>% arrange(- bill_length_mm)
+
+To save this data as dataframe:
+First name it:
+* penguins2 <- penguins %>% arrange(-bill_length_mm)
+* View(penguins2)
+
+Filter data:
+* penguins %>% filter(species == "Adelie")
+  
+# Group_by()
+
+Using group_by statement, excluding NA values, summarize and built the mean statement.
+* penguins %>% group_by(island) %>% drop_na() %>% summarize(mean_bill_length_mm= mean(bill_length_mm))
+
+To get penguins with the max bill length:
+* penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_length_mm= max(bill_length_mm))
+
+Group by both island and specis and summarize both min and max:
+* penguins %>% group_by(secies, island) %>% drop_na() %>% summarize(max_bl= max(bill_length_mm), mean_bl=mean(bill_length_mm))
+
+# Additional resources:
+* 
+# To be Continued...
+
