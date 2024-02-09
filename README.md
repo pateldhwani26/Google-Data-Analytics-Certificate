@@ -363,6 +363,53 @@ To get penguins with the max bill length:
 Group by both island and specis and summarize both min and max:
 * penguins %>% group_by(secies, island) %>% drop_na() %>% summarize(max_bl= max(bill_length_mm), mean_bl=mean(bill_length_mm))
 
+# Transforming data
+
+Install and load packages:
+
+* install.packages("tidyverse")
+* library(tidyverse)
+* install.packages("dplyr")
+* library(dplyr)
+* install.packages("skimr")
+* library(skimr)
+* install.packages("janitor")
+* library(janitor)
+
+Create variables:
+* id <- c(1:10)
+* name <- c("John Mendes", "Rob Stewart", "Rachel Abrahamson", "Christy Hickman", "Johnson Harper", "Candace Miller", "Carlson Landy", "Pansy Jordan", "Darius Berry", "Claudia Garcia")
+* job_title <- c("Professional", "Programmer", "Management", "Clerical", "Developer", "Programmer", "Management", "Clerical", "Developer", "Programmer")
+
+Create dataframe:
+
+* employee <- data.frame(id, name, job_title)
+* print(employee)
+
+To split the first and last names, lets use the separate(name_of_dataframe, column_name_to_separate, name_to split_the col_into, from_where_to_split_the_column):
+* separate(employee, name, into=c('first_name', 'last_name'), sep=' ')
+
+Unite()
+first_name <- c("John", "Rob", "Rachel", "Christy", "Johnson", "Candace", "Carlson", "Pansy", "Darius", "Claudia")
+
+last_name <- c("Mendes", "Stewart", "Abrahamson", "Hickman", "Harper", "Miller", "Landy", "Jordan", "Berry", "Garcia")
+
+job_title <- c("Professional", "Programmer", "Management", "Clerical", "Developer", "Programmer", "Management", "Clerical", "Developer", "Programmer")
+
+employee <- data.frame(id, first_name, last_name, job_title)
+
+print(employee)
+
+To do the opposite, combine the columns:
+asgts6h
+* unite(employee, 'name', first_name, last_name, sep=" ")
+
+(Note: No quotation marks needed here)
+
+
+
+
+
 # Additional resources:
 * 
 # To be Continued...
