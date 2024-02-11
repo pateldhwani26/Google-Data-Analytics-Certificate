@@ -1,0 +1,66 @@
+Question 1
+
+A data scientist is trying to print a data frame but when you print the data frame to the console output produces too many rows and columns to be readable. What could they use instead of a data frame to make printing more readable?
+
+* 
+
+Question 2
+
+A data analyst wants to learn more about a specific data frame. Which function will allow them to review the data types of each column in the data frame?
+
+* 
+
+Question 3
+
+You are working with the ToothGrowth dataset. You want to use the head() function to get a preview of the dataset. Write the code chunk that will give you this preview.
+
+* head(ToothGrowth)
+
+Question 4
+
+A data analyst is working with the penguins dataset. What code chunk does the analyst write to make sure all the column names are unique and consistent and contain only letters, numbers, and underscores? 
+
+* clean_names(penguins)
+
+Question 5
+
+A data analyst is working with the penguins dataset in R. What code chunk will allow them to sort the penguins data by the variable bill_length_mm? 
+
+*
+
+Question 6
+
+You are working with the penguins dataset. You want to use the summarize() and min() functions to find the minimum value for the variable bill_depth_mm. At this point, the following code has already been written into the script:
+
+penguins %>% 
+
+  drop_na() %>% 
+
+  group_by(species) %>%
+
+Add the code chunk that lets you find the minimum value for the variable bill_depth_mm.
+
+* summarize(bill_depth_mm= min(bill_depth_mm))
+
+Question 7
+
+A data analyst is working with a data frame called sales. In the data frame, a column named location represents data in the format “city, state”. The analyst wants to split the city into an individual city column and state into a new countrycolumn. What code chunk lets the analyst split the location column?
+
+* 
+
+Question 8
+
+A data analyst is working with a data frame named users. It has separate columns for first name (first_name) and last name (last_name). The analyst wants to combine the two columns into a single column called full_name, with the first name and last name separated by a space. What code chunk lets the analyst create the full_namecolumn? 
+
+*
+
+Question 9
+
+A data analyst is using statistical measures to get a better understanding of their data. What function can they use to determine how strongly related are two of the variables?
+
+*
+
+Question 10
+
+A data analyst creates two different predictive models for the same dataset. They use the bias() function on both models. The first model has a bias of -40. The second model has a bias of 1. Which model is less biased?
+
