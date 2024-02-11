@@ -406,11 +406,55 @@ asgts6h
 
 (Note: No quotation marks needed here)
 
+# Anscombe's quartet:
 
+# Four datasets that have nearly identical summary statistics.
 
+Firstly, let's install and load packages:
+
+* install.packages('tidyverse')
+* library(tidyverse)
+* install.packages('dplyr')
+* library(dplyr)
+* install.packages('Tmisc')
+* library(Tmisc)
+* data(quartet)
+* View(quartet)
+
+Group_by the data by set to get a summary table:
+
+* quartet %>% 
+  group_by(set) %>%
+  summarise(mean(x),sd(x),mean(y),sd(y),cor(x,y))
+
+Let's put some simple graphs to visualiza this data, as just the statistics can sometimes be misleading.
+
+* ggplot(quartet,aes(x,y)) + geom_point() + geom_smooth(method=lm,se=FALSE) + facet_wrap(~set)
+
+# DatasauRus package creates plots with the Anscombe data in different shapes.
+
+* install.packages('datasaRus')
+* library('datasaRus'')
+
+* ggplot(datasaurus_dozen,aes(x=x,y=y,colour=dataset)) + geom_point()+theme(legend.position="none")+facet_wrap(~dataset,ncol=3)
+
+# The bias function
+
+This finds the average amount that the actual outcome is greater than the predicted outcome. It's included in the sim design package.If the outcome is unbiased, the outcome should be pretty close to zero. A high result means the data might be biased.
+
+Let's work with the weather data:
+
+* install.packages("SimDesign")
+* library(SimDesign)
+
+* actual_temp <- c(68.3, 70, 72.4, 71, 67)
+* predicted_temp <- c (67.9, 69, 71.5, 70, 67)
+* bias(actual_temp, predicted_temp)
 
 
 # Additional resources:
+* https://www.rdocumentation.org/packages/SimDesign/versions/2.2/topics/bias
+* https://datasciencebox.org/02-ethics.html
 * 
 # To be Continued...
 
