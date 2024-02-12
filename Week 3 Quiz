@@ -2,13 +2,13 @@ Question 1
 
 A data scientist is trying to print a data frame but when you print the data frame to the console output produces too many rows and columns to be readable. What could they use instead of a data frame to make printing more readable?
 
-* 
+* A tibble
 
 Question 2
 
 A data analyst wants to learn more about a specific data frame. Which function will allow them to review the data types of each column in the data frame?
 
-* 
+* package(),colnames(),library(),str() ..................................
 
 Question 3
 
@@ -27,7 +27,13 @@ Question 5
 A data analyst is working with the penguins dataset in R. What code chunk will allow them to sort the penguins data by the variable bill_length_mm? 
 
 *
+arrange(bill_length_mm, penguins)
 
+arrange(penguins)
+
+arrange(=bill_length_mm)
+
+arrange(penguins, bill_length_mm)...............................................................
 Question 6
 
 You are working with the penguins dataset. You want to use the summarize() and min() functions to find the minimum value for the variable bill_depth_mm. At this point, the following code has already been written into the script:
@@ -46,21 +52,97 @@ Question 7
 
 A data analyst is working with a data frame called sales. In the data frame, a column named location represents data in the format “city, state”. The analyst wants to split the city into an individual city column and state into a new countrycolumn. What code chunk lets the analyst split the location column?
 
-* 
+* separate(sales, location, into=c("city", "country"), sep=", ")
 
 Question 8
 
 A data analyst is working with a data frame named users. It has separate columns for first name (first_name) and last name (last_name). The analyst wants to combine the two columns into a single column called full_name, with the first name and last name separated by a space. What code chunk lets the analyst create the full_namecolumn? 
 
-*
+* merge(users, "full_name", first_name, last_name, sep = " ")
+
+unite(users, first_name, last_name, "full_name", sep = " ")
+
+unite(users, "full_name", first_name, last_name, sep = " ")
+
+unite(users, "full_name", first_name, last_name, sep = ", ").........................................................
 
 Question 9
 
 A data analyst is using statistical measures to get a better understanding of their data. What function can they use to determine how strongly related are two of the variables?
 
-*
+* cor()
 
 Question 10
 
 A data analyst creates two different predictive models for the same dataset. They use the bias() function on both models. The first model has a bias of -40. The second model has a bias of 1. Which model is less biased?
+
+* The second model
+
+Question 11
+
+What scenarios would prevent you from being able to use a tibble?
+
+*
+
+Question 12
+
+A data analyst is exploring their data to get more familiar with it. They want a preview of just the first six rows to get a better idea of how the data frame is laid out. What function should they use?
+
+*
+
+Question 13
+
+You are working with the ToothGrowth dataset. You want to use the select() function to view all columns except the supp column. Write the code chunk that will give you this view.
+
+*
+
+Question 14
+
+A data analyst is working with a data frame named cars.The analyst notices that all the column names in the data frame are capitalized. What code chunk lets the analyst change all the column names to lowercase? 
+
+*
+
+Question 5
+
+A data analyst is working with the penguins dataset. The variable island represents the island on which the sample was collected. The analyst wants to create a data frame that excludes records from the island named “Torgersen”. What code chunk will allow them to create this data frame?
+
+*
+
+Question 16
+
+You are working with the penguins dataset and want to understand the year of data collection for all combinations of species, island, and sex. At this point, the following code has already been written into your script:
+
+penguins %>% 
+
+  drop_na() %>% 
+
+  group_by(species, island, sex) %>%
+
+  summarize(min = min(year), max = max(year))
+
+*
+
+Question 17
+
+A data analyst is working with a data frame called sales. In the data frame, a column named location represents data in the format “city, state”. The analyst wants to split the city into an individual city column and state into a new countrycolumn. What code chunk lets the analyst split the location column?
+
+*
+
+Question 18
+
+A data analyst is working with a data frame named retail. It has separate columns for dollars (price_dollars) and cents (price_cents). The analyst wants to combine the two columns into a single column named price, with the dollars and cents separated by a decimal point. For example, if the value in the price_dollars column is 10, and the value in the price_centscolumn is 50, the value in the pricecolumn will be 10.50. What code chunk lets the analyst create the pricecolumn? 
+
+*
+
+Question 19
+
+In R, which statistical measure can help you understand the spread of values in a dataset and describe how far each value is from the mean?
+
+*
+
+Question 20
+
+A data analyst creates two different predictive models for the same dataset. They use the bias() function on both models. The first model has a bias of 20. The second model has a bias of 0.1. Which model is less biased?
+
+*
 
