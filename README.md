@@ -274,7 +274,7 @@ Using the RStudio Cloud interface, import and save the file in the same folder a
 
 * own_df <- read_csv("<filename.csv>")
 
-# Simplyfy data cleaning tsaks using here, skimr, and janitor packages using 'palmerpenguins' dataset:
+# Simplyfy data cleaning tasks using here, skimr, and janitor packages using 'palmerpenguins' dataset:
 
 'here' package makes referencing file easier.
 * install.packages("here")
