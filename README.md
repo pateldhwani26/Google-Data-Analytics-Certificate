@@ -451,6 +451,41 @@ Let's work with the weather data:
 * predicted_temp <- c (67.9, 69, 71.5, 70, 67)
 * bias(actual_temp, predicted_temp)
 
+# Creating Visualizations in R
+
+Important packages for visualizations are:
+
+* ggplot2
+* Plotly
+* Lattice
+* RGL
+* Dygraphs
+* Leaflet
+* Highcharter
+* Patchwork
+* gganimate
+* ggridges
+
+Benefits of ggplot2:
+
+* Create different type of plots i.e: scatter plots, bar charts, line diagrams
+* Customize the look and feel of plots i.e: titles, captions and labels
+* Create high quality  
+* Combine data manipulation and visualization using Pipe operator
+
+Core concepts on ggplots2:
+
+* Aesthetics (R)
+  A visual property of an object in the plot
+  
+* Geoms (R)
+  A geometric object used to represent the data
+  
+* Facets (R)
+  Let us display the smaller group, or subsets, of the data
+  
+* Labels and Annotations (R)
+  Let's us customise the plots
 
 # Additional resources:
 * https://www.rdocumentation.org/packages/SimDesign/versions/2.2/topics/bias
