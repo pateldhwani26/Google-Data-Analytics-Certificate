@@ -20,7 +20,7 @@ Coding in R
 # Basic Programming Concepts
 To check installed packages
 
-* installed.packages()
+* install.packages()
 
 List of packages can be seen on the bottom right pane. 
 
