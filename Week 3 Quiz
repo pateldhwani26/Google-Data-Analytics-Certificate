@@ -48,7 +48,7 @@ A data analyst is working with a data frame called sales. In the data frame, a c
 
 * separate(sales, location, into=c("city", "country"), sep=", ")
 
-Question 8
+# Question 8
 
 A data analyst is working with a data frame named users. It has separate columns for first name (first_name) and last name (last_name). The analyst wants to combine the two columns into a single column called full_name, with the first name and last name separated by a space. What code chunk lets the analyst create the full_namecolumn? 
 
@@ -60,26 +60,26 @@ unite(users, "full_name", first_name, last_name, sep = " ")
 
 unite(users, "full_name", first_name, last_name, sep = ", ").........................................................
 
-Question 9
+# Question 9
 
 A data analyst is using statistical measures to get a better understanding of their data. What function can they use to determine how strongly related are two of the variables?
 
 * cor()
 
-Question 10
+# Question 10
 
 A data analyst creates two different predictive models for the same dataset. They use the bias() function on both models. The first model has a bias of -40. The second model has a bias of 1. Which model is less biased?
 
 * The second model
 
-Question 11
+# Question 11
 
 What scenarios would prevent you from being able to use a tibble?
 
 * You need to change the data types of inputs
 * You need to create row names
 
-Question 12
+# Question 12
 
 A data analyst is exploring their data to get more familiar with it. They want a preview of just the first six rows to get a better idea of how the data frame is laid out. What function should they use?
 
