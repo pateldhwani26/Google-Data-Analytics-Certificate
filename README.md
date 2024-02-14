@@ -487,6 +487,32 @@ Core concepts on ggplots2:
 * Labels and Annotations (R)
   Let's us customise the plots
 
+# Enhancing Visualizations
+
+# Aesthetic = Color
+
+data("penguins")
+View(penguins)
+
+ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species))
+
+# Aesthetic = Size
+
+* ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species,shape=species,size=species))
+
+# Aesthetic = Shape
+
+* ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species,shape=species))
+
+# Aesthetic = Alpha
+
+* ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,alpha=species))
+
+# Changing color of the whole plot
+
+* ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g),color="purple")
+
+
 # Additional resources:
 * https://www.rdocumentation.org/packages/SimDesign/versions/2.2/topics/bias
 * https://datasciencebox.org/02-ethics.html
