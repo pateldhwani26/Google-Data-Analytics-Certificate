@@ -513,10 +513,85 @@ ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,c
 
 * ggplot(data=penguins)+geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g),color="purple")
 
+# More with ggplot2
 
+Using Geom Functions with "penguins" dataset:
+
+* geom_point():
+
+  Helps us to make scatter plot.
+  
+* geom_bar():
+
+  Uses bars to create bar chart.
+
+  Let's create a bar chart using "diamonds" dataset.
+
+  ggplot(data=diamonds)+
+  geom_bar(mapping=aes(x=cut))
+
+  Using Aesthetic-color:
+  
+  * ggplot(data=diamonds)+geom_bar(mapping=aes(x=cut,color=cut))
+
+  But 'color=cut' will only color the border of the bars, to make the bars more noticable with colors, use 'fill'.
+
+  * ggplot(data=diamonds)+geom_bar(mapping=aes(x=cut,fill=cut))
+
+  To understand more combinations of cut and clarity, try the following.
+
+  * ggplot(data=diamonds)+geom_bar(mapping=aes(x=cut,fill=clarity))
+
+* geom_line():
+
+  Uses line to create line chart.
+  
+* geom_smooth():
+
+  Insted of points it represents visual with smooth line. 
+
+  ggplot(data=penguins)+geom_smooth(mapping=aes(x=flipper_length_mm,y=body_mass_g))
+
+  There are two types of smoothning.
+
+  a) Loes Smoothning:
+
+  Ideal for smoothning plots with less then 1000 points.
+
+  ggplot(data, aes(x= , y= )) + geom_point() + geom_smooth(method="loess")
+  
+  b) Gam Smoothning or Generalized Additive Model Smoothning:
+
+  Useful with large number of points.
+
+  ggplot(data, aes(x= , y= )) + geom_point() + geom_smooth(method="gam", formula=y~s()x)
+  
+
+Combining geom_point & geom_smooth
+
+* ggplot(data=penguins)+
+  geom_smooth(mapping=aes(x=flipper_length_mm,y=body_mass_g))+
+  geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g))
+
+If we want separate line for each species:
+
+* ggplot(data=penguins)+geom_smooth(mapping=aes(x=flipper_length_mm,y=body_mass_g,linetype=species))
+
+* geom_gitter():
+
+  ggplot(data=penguins)+geom_jitter(mapping=aes(x=flipper_length_mm,y=body_mass_g,linetype=species))
+
+
+  It creates a scatter plot and then adds a small amount of random noise to each point in the plot. It helps us deal with overplotting, which happens when points overlap. Jittering makes it easier to find each point.
+
+  
 # Additional resources:
 * https://www.rdocumentation.org/packages/SimDesign/versions/2.2/topics/bias
 * https://datasciencebox.org/02-ethics.html
+* https://ggplot2.tidyverse.org/
+* https://www.rdocumentation.org/packages/ggplot2/versions/3.3.3/topics/aes
 * 
+
+
 # To be Continued...
 
