@@ -581,8 +581,37 @@ If we want separate line for each species:
 
   ggplot(data=penguins)+geom_jitter(mapping=aes(x=flipper_length_mm,y=body_mass_g,linetype=species))
 
-
   It creates a scatter plot and then adds a small amount of random noise to each point in the plot. It helps us deal with overplotting, which happens when points overlap. Jittering makes it easier to find each point.
+
+# Facets (R)
+
+Let's us display smaller groups, or subsets, of the data.
+
+* install.packages("ggplot2")
+* install.packages("tidyverse")
+* library(tidyverse)
+* library(ggplot2)
+
+Facet functions:
+
+* facet_wrap()
+
+  *  ggplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_wrap(~species)
+
+  Let's use the 'diamonds' dataset to check out each cut category.
+
+  * ggplot(data=diamonds) + geom_bar(mapping=aes(x=color,fill=cut))+ facet_wrap(~cut)
+
+* facet_grid()
+
+  This function will split the plot into facets vertically by the values of first variable and horizonltally by the values of second variable.
+  
+   * ggplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+ facet_grid(sex~species)
+
+     or
+     
+   * gplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+ facet_grid(~sex)
+
 
   
 # Additional resources:
@@ -590,7 +619,9 @@ If we want separate line for each species:
 * https://datasciencebox.org/02-ethics.html
 * https://ggplot2.tidyverse.org/
 * https://www.rdocumentation.org/packages/ggplot2/versions/3.3.3/topics/aes
-* 
+* https://datacarpentry.org/dc_zurich/R-ecology/05-visualisation-ggplot2.html
+* https://rladiessydney.org/courses/ryouwithme/03-vizwhiz-1/#1-4-putting-it-all-together-dplyr-ggplot
+* https://r4ds.had.co.nz/transform.html
 
 
 # To be Continued...
