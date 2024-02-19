@@ -661,13 +661,10 @@ Add the annotation:
 
 * Export option
 
- -> Plots
- 
- -> export
- 
- -> save as image
- 
- -> file name
+  * Plots
+  * export
+  * save as image
+  * file name
 
 * ggsave() function
 
@@ -685,5 +682,8 @@ Add the annotation:
 * https://r-graph-gallery.com/233-add-annotations-on-ggplot2-chart.html
 * https://ggplot2-book.org/annotations.html
 * https://ggplot2.tidyverse.org/reference/annotate.html
+* https://www.datanovia.com/en/blog/how-to-save-a-ggplot/
+* https://www.datamentor.io/r-programming/saving-plot
+* https://ggplot2.tidyverse.org/reference/ggsave.html#saving-images-without-ggsave-
   
 
