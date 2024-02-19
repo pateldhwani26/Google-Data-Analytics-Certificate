@@ -612,8 +612,67 @@ Facet functions:
      
    * gplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+ facet_grid(~sex)
 
+# Annotate
 
-  
+To add notes to a document or diagram to explain or comment upon it.
+
+ * Titles
+
+   ggplot(data=penguins) +geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
+   labs(title="Palmer Penguins: Body Mass vs. Flipper Length")
+
+ * Subtitles
+
+   ggplot(data=penguins) +geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))
+   +labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of three Penguin Species")
+
+ * Captions
+
+   ggplot(data=penguins) + geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
+   labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of three Penguin Species",
+   caption="Data collected by Dr. Kristen Gorman")
+
+ 
+ Annotation Function:
+
+ To write a text label and place it at the specific location of the plot.
+
+ 
+* ggplot(data=penguins) + 
+  geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
+  labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of three Penguin Species",
+  caption="Data collected by Dr. Kristen Gorman") +
+  annotate("text", x=220,y=3500,label="The Gentos are the largest", color="purple",fontface="bold", size=4.5,angle=25)
+
+To avoid rewriting the long code, we can assign a variable and and annotation to it.
+
+Assign the variable:
+
+* p <- ggplot(data=penguins) + 
+  geom_point(mapping=aes(x=flipper_length_mm, y=body_mass_g, color=species))+
+  labs(title="Palmer Penguins: Body Mass vs. Flipper Length", subtitle="Sample of three Penguin Species",
+  caption="Data collected by Dr. Kristen Gorman")
+      
+Add the annotation:
+
+* p+annotate("text", x=220,y=3500,label="The Gentos are the largest", color="purple",fontface="bold", size=4.5,angle=25)
+
+# To share and reproduce the work with the team mates:
+
+* Export option
+
+ -> Plots
+ 
+ -> export
+ 
+ -> save as image
+ 
+ -> file name
+
+* ggsave() function
+
+  ggsave("Three Penguin Species.png")
+
 # Additional resources:
 * https://www.rdocumentation.org/packages/SimDesign/versions/2.2/topics/bias
 * https://datasciencebox.org/02-ethics.html
@@ -622,7 +681,9 @@ Facet functions:
 * https://datacarpentry.org/dc_zurich/R-ecology/05-visualisation-ggplot2.html
 * https://rladiessydney.org/courses/ryouwithme/03-vizwhiz-1/#1-4-putting-it-all-together-dplyr-ggplot
 * https://r4ds.had.co.nz/transform.html
-
-
-# To be Continued...
+* https://www.r-bloggers.com/2017/02/how-to-annotate-a-plot-in-ggplot2/
+* https://r-graph-gallery.com/233-add-annotations-on-ggplot2-chart.html
+* https://ggplot2-book.org/annotations.html
+* https://ggplot2.tidyverse.org/reference/annotate.html
+  
 
