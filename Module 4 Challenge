@@ -1,0 +1,82 @@
+Question 1
+
+Which of the following statements about ggplot is true?
+
+* ggplot allows analysts to create different types of plots.
+
+Question 2
+
+A data analyst creates a bar chart with the diamonds dataset. They begin with the following line of code: 
+
+ggplot(data = diamonds) :
+
+*  The plus sign (+)
+
+Question 3
+
+A data analyst creates a plot using the following code chunk: 
+
+ggplot(data = penguins) + 
+
+   geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+Which of the following represents a function in the code chunk? Select all that apply. 
+
+* The ggplot function
+
+* The aes function
+
+* The geom_point function
+
+Question 4
+
+Which code snippet will make all of the bars in the plot have different colors and shapes based on their heights?
+
+* ggplot(data = buildings) + geom_bar(mapping = aes(x = construction_year, color=height, shape=height))
+
+Question 5
+
+A data analyst is working with the following plot and gets an error caused by a bug. What is the cause of the bug?
+
+ggplot(data = penguins) + geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+* The plus should be at the end of the first line.
+
+Question 6
+
+You are working with the penguins dataset. You create a scatterplot with the following code: 
+
+ggplot(data = penguins) +  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+You want to highlight the different years of data collection on your plot. Add a code chunk to the second line of code to map the aesthetic size to the variable year.
+
+* geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, size=year))
+
+Question 7
+
+Which aesthetic of the geom_smooth function can be used to change the style of the line?
+
+* linetype
+
+Question 8
+
+You are working with the diamonds dataset. You create a bar chart with the following code:
+
+ggplot(data = diamonds) + geom_bar(mapping = aes(x = color, fill = cut)) +
+
+You want to use the facet_wrap() function to display subsets of your data. Add the code chunk that lets you facet your plot based on the variable clarity. 
+
+* ggplot(data = diamonds) + geom_bar(mapping = aes(x = color, fill = cut)) + facet_wrap(~clarity)
+
+Question 9
+
+Fill in the blank: You can use the _____ function to put a text label on your plot to call out specific data points. 
+
+* annotate() 
+
+Question 10
+
+In R studio, what default options does the Export functionality of the Plots tab give for exporting plots?
+
+* PDF
+* Image
