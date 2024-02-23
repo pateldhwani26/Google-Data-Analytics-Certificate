@@ -20,8 +20,104 @@ A data analyst wants to convert their R Markdown file into another format. What 
 
 * HTML, PDF, and Word
 
-Question 4
+Question 4.
 
 A data analyst has finished editing their R Markdown file and wants to save it as an HTML report. What tool will they use?
 
 * Knit
+
+Question 5.
+
+A data analyst wants to create a shareable report of their analysis with documentation of their process and notes explaining their code to stakeholders. What tool can they use to generate this?
+
+* R Markdown
+
+Question 6.
+
+A data analyst wants to export their R Markdown notebook as a text document. What are the text document formats they can use to share their R Markdown notebook? Select all that apply.
+
+* HTML
+* PDF
+* Word
+
+Question 7.
+
+Which combination of text characters can be used to embed an image in a markdown document?
+
+* ![]()
+
+Question 8.
+
+Fill in the blank: A data analyst includes _____ in their R Markdown notebook so that they can refer to it directly in their explanation of their analysis. 
+
+* inline code
+
+Question 9.
+
+A data analyst inputs asterisks before a word of phrase in R Markdown. How will this appear in the document?
+
+* As bullet points
+
+Question 10.
+
+Fill in the blank: Code added to an .rmd file is usually referred to as a code _____. This allows users to execute R code from within the .rmd file. 
+
+* chunk
+
+Question 11.
+
+Fill in the blank: A delimiter is a character that indicates the beginning or end of _____.
+
+* 
+
+Question 12.
+
+A data analyst is finalizing their work in an R Markdown notebook and wants to use a format that will allow them to control where page breaks happen. Which of the following export formats have page breaks? Select all that apply.
+
+* PDF
+* Word
+
+Question 13.
+
+A data analyst is inserting a line of code directly into their .rmd file. What will they use to mark the beginning and end of the code?
+
+* Delimeter
+
+Question 14.
+
+Fill in the blank: Code added to an .rmd file is usually referred to as a code _____. This allows users to execute R code from within the .rmd file. 
+
+* chunk  
+
+Question 15.
+
+Which pieces of markdown text will produce a result that is italicized? Select all that apply.
+
+* (*text*)
+
+Question 16.
+
+A data analyst writes two hashtags next to their header. What will this do to the header font in the .rmd file?
+
+* Make it smaller
+
+Question 17.
+
+A data analyst finishes editing an R Markdown notebook and wants to convert it to a new format they can share. What are their options? Select all that apply.
+
+* Word documents
+* Slide presentations
+* Dashboards
+
+Question 18.
+
+A data analyst is regularly exporting documents from a .rmd file and manually customizing the appearance of the document they give to stakeholders. What would allow them to automatically customize the appearance of the document?
+
+* A template
+
+Question 19.
+
+What does the ```{r} delimiter (three backticks followed by an r contained inside curly brackets) indicate in an R Markdown notebook?
+
+* The start of a code chunk
+
