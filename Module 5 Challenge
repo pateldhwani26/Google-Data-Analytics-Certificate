@@ -121,3 +121,21 @@ What does the ```{r} delimiter (three backticks followed by an r contained insid
 
 * The start of a code chunk
 
+Question 20.
+
+Fill in the blank: A delimiter is a character that marks the beginning and end of _____. 
+
+* a data item
+
+Question 21.
+
+A data analyst has to create a monthly report for their stakeholders. What can they create to help them save time generating these reports?
+
+* Template
+
+Question22.
+
+A data analyst wants to mark the beginning of their code chunk. What delimiter should they type in their .rmd file? 
+
+* ```{r }
+
